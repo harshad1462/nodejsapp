@@ -12,7 +12,7 @@ pipeline {
         // Stage 1: Pull the code from Git
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/harshad1462/nodejsapp'
+                git 'https://github.com/harshad1462/nodejsapp.git'
             }
         }
 
