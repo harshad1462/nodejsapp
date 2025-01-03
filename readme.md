@@ -1,2 +1,2 @@
-chatbot application
+node chatbot application
 npm install
