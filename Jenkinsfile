@@ -13,7 +13,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 checkout scmGit(
-                branches: [[name: 'master']],
+                branches: [[name: 'main']],
                 userRemoteConfigs: [[url: 'https://github.com/jenkinsci/git-plugin.git']])            }
         }
 
