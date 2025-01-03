@@ -12,8 +12,9 @@ pipeline {
         // Stage 1: Pull the code from Git
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/harshad1462/nodejsapp.git'
-            }
+                checkout scmGit(
+                branches: [[name: 'master']],
+                userRemoteConfigs: [[url: 'https://github.com/jenkinsci/git-plugin.git']])            }
         }
 
         // Stage 2: Run tests
